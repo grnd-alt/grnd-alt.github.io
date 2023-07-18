@@ -1,5 +1,4 @@
 <script>
-	import { page } from '$app/stores';
 	import logo from '$lib/images/FotoBelakkaf.jpg';
 	import github from '$lib/images/github.svg';
 </script>
