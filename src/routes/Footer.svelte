@@ -1,70 +1,44 @@
 <script>
 	import logo from '$lib/images/FotoBelakkaf.jpg';
 	import github from '$lib/images/github.svg';
+	import home from '$lib/images/home.svg'
 </script>
 
 <footer>
-
-
-	<nav>
-		<div class="corner">
-			<img src={logo} alt="SvelteKit" />
-		</div>
-		<div class="corner">
-			<a href="https://github.com/grnd-alt" target="_blank">
-				<img src={github} alt="GitHub" />
-			</a>
-		</div>
-	</nav>
+	<div class="footer-center">
+		<img class='logo' src={logo} alt="github" />
+		<a href="https://github.com/grnd-alt" target="_blank">
+			<img src={github} alt="GitHub" />
+		</a>
+		<a href="/">
+			<img src={home} alt="SvelteKit" />
+		</a>
+	</div>
 </footer>
 
 <style>
-	footer {
+	.footer-center{
+		height:2rem;
+		overflow: hidden;
+		padding-bottom: 10px;
+		display:flex;
+		justify-content: space-around;
+	}
+	footer{
+		height:3rem;
+		overflow:hidden;
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
 	}
-
-	.corner {
-		width: 2.5em;
-		height: 2.5em;
+	.logo{
+		border-radius:100px;
 	}
-
-	.corner a {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		height: 100%;
-	}
-
-	.corner img {
-		border-radius: 100px;
-		width: 100%;
-		height: 100%;
+	img{
 		object-fit: cover;
 		aspect-ratio: 1/1;
-	}
-
-	nav {
-		display: flex;
-		justify-content: center;
-		--background: rgba(255, 255, 0, 0.7);
-	}
-	nav a {
-		display: flex;
-		height: 100%;
-		align-items: center;
-		padding: 0 0.5rem;
-		color: var(--color-text);
-		font-weight: 700;
-		font-size: 0.8rem;
-		text-transform: uppercase;
-		letter-spacing: 0.1em;
-		text-decoration: none;
-		transition: color 0.2s linear;
-	}
-
-	a:hover {
-		color: var(--color-theme-1);
+		height: 2em;
+		width: 2em;
+		overflow: hidden
 	}
 </style>
