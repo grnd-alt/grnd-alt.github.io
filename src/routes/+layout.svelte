@@ -13,21 +13,16 @@
 
 <style>
 	.app {
-		padding:5px;
-		background-color: var(--color-background);		
 		display: flex;
 		flex-direction: column;
-		max-height: 100vh;
-		min-height: 99vh;
 	}
 
 	main {
 		flex: 1;
 		display: flex;
 		flex-direction: column;
-		padding: 1rem;
 		width: 100%;
-		height: 100%;
+		min-height: calc(100vh - 3rem);
 		margin: 0 auto;
 		box-sizing: border-box;
 	}
