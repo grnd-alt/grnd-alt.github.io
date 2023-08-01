@@ -13,6 +13,7 @@
 
 <style>
 	.app {
+		color:white;
 		display: flex;
 		flex-direction: column;
 	}

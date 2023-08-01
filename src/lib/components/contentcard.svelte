@@ -34,7 +34,7 @@
 		background-image: linear-gradient(to top right,rgba(0,0,0,.7),rgba(0,0,0,0));
 	}
 	.content h2 {
-		color: var(--color-highlight);
+		color: var(--primary);
 		font-size: 2.5em;
 		margin: 0;
 		padding:0;
@@ -43,7 +43,7 @@
 		margin-top:0;
 	}
     .imgwrap{
-		border: 3px solid var(--color-highlight);
+		border: 3px solid var(--primary);
 		border-radius: 20px;
 		overflow: hidden;
 		display: grid;
